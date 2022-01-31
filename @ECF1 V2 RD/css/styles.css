@@ -1,0 +1,159 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+Body {
+	max-width:  1200px;
+	margin: auto;
+}
+
+/* navigation*/
+
+header {
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #DEDEDE;
+}
+
+.logo {
+	padding-left: 20px;
+}
+
+.myLogo {
+	max-width: 150px;
+}
+
+li {
+	display: inline-block;
+	margin-left: 60px;
+}
+
+.menu {
+margin-top: auto;
+margin-bottom: auto;
+margin-right: 5%;
+}
+
+
+/* main */
+
+main {
+	display: flex;
+}
+
+.blog {
+	background-color: rgba(0, 0, 0, .3);
+	max-width:  70%;
+	overflow-y: scroll;
+	padding: 20px;
+	height:  100vh;
+}
+
+.acote {
+	background-color: rgba(0, 0, 0, .1);
+	width:  30%;
+	padding: 20px;
+}
+
+article {
+	background-color: rgba(0, 0, 0, .8);
+	max-width:  90%;
+	margin: auto;
+	margin-top: 20px;
+	padding: 15px;
+	color: white;
+}
+
+.blog article:hover {
+	background-color: white;
+	color: black;
+}
+
+/* aside {
+	position: fixed;
+	max-width: 100%;
+} */
+
+aside article {
+	background-color: white;
+}
+
+aside article:first-child li{
+	display: block;
+	margin: auto;
+}
+
+aside article:last-child {
+	background-color: rgba(0, 0, 0, .3);
+}
+
+aside form textarea {
+	width: 98%;
+}
+
+aside form input {
+	width: 98%;
+}
+
+/* footer */
+
+footer {
+	position: sticky;
+	bottom: 0vh;
+}
+.copyright {
+	text-align: center;
+		margin-top: 0px;
+}
+.copyrightdiv {
+	background-color: white;
+}
+
+.map {
+	height: 400px;
+	width: 94%;
+	margin: auto;
+	margin-top: 20px;
+  }
+
+
+@media screen and (max-width: 800px) {
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+.myLogo {
+	max-width: 100px;
+}
+.menu {
+margin-right: 7%;
+}
+li {
+	margin-left: 24px;
+}
+.blog {
+	max-width:  100%;
+	overflow: initial;
+	height: 100%;
+}
+.acote {
+	width:  100%;
+}
+/* aside {
+	position: static;
+	width: 100%;
+} */
+}
+
+/* @media screen and (min-width: 1335px) {
+aside {
+	width: 277px;
+}
+} */
